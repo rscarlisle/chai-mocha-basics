@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  
+    <style>
+      .mystyle {
+          width: 300px;
+          height: 100px;
+          background-color: coral;
+          text-align: center;
+          font-size: 25px;
+          color: white;
+          margin-bottom: 10px;
+      }
+    </style>
+  
+  
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+    
+    <div id="demo">I see a big orange block...</div>
+    
+    <!-- load code you want to test here -->
+    <script src="js/className.js"></script>
+
+    <!-- load your test files here -->
+    <script src="test/classNameTest.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+    
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+
+    <!--<div id="demo"></div>-->
+  </body>
+</html>
